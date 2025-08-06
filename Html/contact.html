@@ -212,8 +212,8 @@
             <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
         </div>
     </footer>
-  
-<script type="text/javascript">
+    <script src="../Js/main.js"></script>
+    <script type="text/javascript">
     (function() {
         emailjs.init('llDCHpqelGMiQRs-P');
     })();
@@ -294,29 +294,6 @@
                     this.parentElement.classList.remove('focused');
                 }
             });
-        });
-
-        // Navigation active et menu mobile
-        document.addEventListener('DOMContentLoaded', () => {
-            // Navigation active
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function () {
-                    navLinks.forEach(item => item.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-
-            // Menu mobile
-            const menuToggle = document.querySelector('.menu-toggle');
-            const nav = document.querySelector('nav');
-            
-            if (menuToggle && nav) {
-                menuToggle.addEventListener('click', () => {
-                    nav.classList.toggle('active');
-                    menuToggle.classList.toggle('active');
-                });
-            }
         });
     </script>
   

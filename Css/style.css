@@ -279,7 +279,7 @@ nav ul {
 }
 .about-content-section {
     background-color: #dddddd;
-    padding: 100px ;
+    padding: 10px ;
 } 
 .contact-content-section {
     padding: 50px ;
@@ -810,11 +810,14 @@ footer {
         padding-top: 30px;
     }
     .container {
-        padding-top: 100px;
+        padding-top: 70px;
     }
-    .container , p h1 {
-        color : rgb(29, 0, 25) ;
+    .container , 
+    p,
+    h1 {
+        color : rgb(5, 64, 112) ;
         text-align: center;
+        font-weight: 500;
     }
     .menu-toggle {
         display: block;
