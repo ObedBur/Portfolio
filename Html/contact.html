@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Mon Portfolio</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <span>Portfolio</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="about.html" class="nav-link active"><i class="fas fa-user"></i> À propos</a></li>
+                <li><a href="project.html" class="nav-link"><i class="fas fa-briefcase"></i> Projets</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero-section parallax-bg" data-parallax-speed="0.07">
+            <div class="container">
+                <h1 class="section-title typing-effect" data-typing-speed="150">Contactez-moi</h1>
+                <p class="section-subtitle hero-parallax-element" data-speed-x="10" data-speed-y="15">Une question, un
+                    projet ou une opportunité ? N'hésitez pas à me contacter</p>
+            </div>
+        </section>
+
+        <section class="contact-content-section reveal-element" data-parallax-speed="0.05">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info hero-parallax-element" data-speed-x="5" data-speed-y="10" data-reverse>
+                        <div class="info-header">
+                            <div class="info-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <h2>Mes Coordonnées</h2>
+                        </div>
+
+                        <p class="info-text">Vous pouvez me contacter directement par email ou téléphone, ou remplir le
+                            formulaire ci-contre. Je vous répondrai dans les meilleurs délais.</p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="item-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="item-content">
+                                    <h3>Email</h3>
+                                    <p>obedburindi@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="item-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="item-content">
+                                    <h3>Téléphone</h3>
+                                    <p>+243 974 927 593</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="item-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="item-content">
+                                    <h3>Localisation</h3>
+                                    <p><a href="https://maps.app.goo.gl/CZDiAF283b6wH8CG8"></a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-map parallax-image" data-depth="0.1">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.8734038369483!2d29.226920776459825!3d-1.6555959861985986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMzknMjAuMiJTIDI5wrAxMyc0NS4yIkU!5e0!3m2!1sfr!2scd!4v1628147852284!5m2!1sfr!2scd"
+                                    width="100%"
+                                    height="200"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy">
+                            </iframe>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Réseaux Sociaux</h3>
+                            <div class="social-icons">
+                                <a href="ttps://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="social-icon hero-parallax-element" data-speed-x="3" data-speed-y="3"
+                                    target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/settings/profile" class="social-icon hero-parallax-element" data-speed-x="4" data-speed-y="2"
+                                    target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://x.com/BurindiO" class="social-icon hero-parallax-element" data-speed-x="2" data-speed-y="4"
+                                    target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/obed.bur/" class="social-icon hero-parallax-element" data-speed-x="5" data-speed-y="1"
+                                    target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" onsubmit="return sendEmail(event)">
+                        <div class="form-header">
+                            <div class="form-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h2>Envoyez-moi un message</h2>
+                        </div>
+                    
+                        <div class="form-grid">
+                            <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                                <div class="modern-input">
+                                    <input type="text" id="name" name="user_name" required>
+                                    <label for="name">
+                                        <i class="fas fa-user"></i>
+                                        <span>Nom complet</span>
+                                    </label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                    
+                            <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                                <div class="modern-input">
+                                    <input type="email" id="email" name="user_email" required>
+                                    <label for="email">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>Adresse email</span>
+                                    </label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                    
+                            <div class="form-group full-width" data-aos="fade-up" data-aos-delay="300">
+                                <div class="modern-input">
+                                    <input type="text" id="subject" name="subject" required>
+                                    <label for="subject">
+                                        <i class="fas fa-heading"></i>
+                                        <span>Sujet</span>
+                                    </label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                    
+                            <div class="form-group full-width" data-aos="fade-up" data-aos-delay="400">
+                                <div class="modern-input">
+                                    <textarea id="message" name="message" rows="6" required></textarea>
+                                    <label for="message">
+                                        <i class="fas fa-comment-alt"></i>
+                                        <span>Votre message</span>
+                                    </label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="form-footer" data-aos="fade-up" data-aos-delay="500">
+                            <button type="submit" class="submit-btn" id="submit-btn">
+                                <span class="button-content">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span>Envoyer le Message</span>
+                                </span>
+                                <span class="button-loader">
+                                    <i class="fas fa-circle-notch fa-spin"></i>
+                                </span>
+                            </button>
+                        </div>
+                    
+                        <!-- Notification de succès/erreur -->
+                        <div class="form-notification" id="notification"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Portfolio</h3>
+                <p>Créateur d'expériences web innovantes</p>
+            </div>
+            <div class="footer-links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="project.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> obedburindi@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +243 974 937 593 </p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/settings/profile"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/BurindiO"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+  
+<script type="text/javascript">
+    (function() {
+        emailjs.init('llDCHpqelGMiQRs-P');
+    })();
+
+    // Fonction d'envoi d'email
+    function sendEmail(event) {
+        event.preventDefault();
+        
+        const btn = document.getElementById('submit-btn');
+        const notification = document.getElementById('notification');
+        
+        // Ajouter la classe loading
+        btn.classList.add('loading');
+        
+        // Préparer les paramètres
+        const templateParams = {
+            from_name: document.getElementById('name').value,
+            from_email: document.getElementById('email').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value,
+            to_email: 'obedburindi@gmail.com'
+        };
+
+        // Remplacer avec vos vrais IDs EmailJS
+        emailjs.send('service_u2pwpa5', 'template_n7k0sz9', templateParams)
+            .then(function(response) {
+                // Succès
+                btn.classList.remove('loading');
+                notification.innerHTML = 'Message envoyé avec succès!';
+                notification.className = 'form-notification success';
+                document.getElementById('contactForm').reset();
+                
+                setTimeout(() => {
+                    notification.className = 'form-notification';
+                }, 5000);
+            }, function(error) {
+                // Erreur
+                console.error("Erreur:", error);
+                btn.classList.remove('loading');
+                notification.innerHTML = 'Erreur lors de l\'envoi du message. Veuillez réessayer.';
+                notification.className = 'form-notification error';
+                
+                setTimeout(() => {
+                    notification.className = 'form-notification';
+                }, 5000);
+            })
+            .catch(function(error) {
+            console.error("Erreur EmailJS:", error);
+            btn.classList.remove('loading');
+            notification.innerHTML = 'Erreur lors de l\'envoi du message. Veuillez réessayer.';
+            notification.className = 'form-notification error';
+            setTimeout(() => {
+                notification.className = 'form-notification';
+            }, 5000);
+            });
+            return false;
+    }
+</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+        // Initialisation de la bibliothèque AOS (Animation On Scroll)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Animation des champs du formulaire au focus
+        const formInputs = document.querySelectorAll('.input-with-icon input, .input-with-icon textarea');
+        formInputs.forEach(input => {
+            input.addEventListener('focus', function () {
+                this.parentElement.classList.add('focused');
+            });
+            input.addEventListener('blur', function () {
+                if (this.value === '') {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
+        });
+
+        // Navigation active et menu mobile
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navigation active
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    navLinks.forEach(item => item.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Menu mobile
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+            
+            if (menuToggle && nav) {
+                menuToggle.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                    menuToggle.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+  
+</body>
+
+</html>

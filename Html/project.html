@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Mon Portfolio</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <span>Portfolio</span>
+        </div>
+        <nav>
+            <ul class="nav-links">  <!-- Ajoutez la classe nav-links -->
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="about.html" class="nav-link active"><i class="fas fa-user"></i> À propos</a></li>
+                <li><a href="project.html" class="nav-link"><i class="fas fa-briefcase"></i> Projets</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="projets" class="projects-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Mes Projets</h2>
+            <p class="section-description">Découvrez mes réalisations récentes qui démontrent mes compétences et mon expertise.</p>
+        </div>
+
+        <div class="projects-filter" data-aos="fade-up" data-aos-delay="300">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Projet 1 -->
+            <article class="project-card" data-aos="fade-up" data-aos-delay="200" data-category="web">
+                <div class="project-image">
+                    <img src="../Images/porfollio.png" alt="Projet 1">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h3>Site E-commerce</h3>
+                            <a href="#" class="view-project-btn">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Site E-commerce</h3>
+                    <p>Développement d'une plateforme e-commerce complète avec panier d'achat et système de
+                        paiement.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Voir le Site</a>
+                        <a href="#" class="btn"><i class="fab fa-github"></i> Code Source</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projet 2 -->
+            <article class="project-card" data-aos="fade-up" data-aos-delay="400" data-category="mobile">
+                <div class="project-image">
+                    <img src="../Images/gestion.png" alt="Projet 2">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h3>Application de Gestion</h3>
+                            <a href="#" class="view-project-btn">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Application de Gestion</h3>
+                    <p>Application web pour la gestion de projets et le suivi des tâches en équipe.</p>
+                    <div class="project-tech">
+                        <span>Vue.js</span>
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Voir le Site</a>
+                        <a href="#" class="btn"><i class="fab fa-github"></i> Code Source</a>
+                    </div>
+                </div>
+            </article>
+            <!-- Projet 3 -->
+            <article class="project-card" data-aos="fade-up" data-aos-delay="600" data-category="design">
+                <div class="project-image">
+                    <img src="../Images/porfollio.png" alt="Projet 3">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h3>Blog Personnel</h3>
+                            <a href="#" class="view-project-btn">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Blog Personnel</h3>
+                    <p>Blog responsive avec système de gestion de contenu personnalisé.</p>
+                    <div class="project-tech">
+                        <span>WordPress</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Voir le Site</a>
+                        <a href="#" class="btn"><i class="fab fa-github"></i> Code Source</a>
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Portfolio</h3>
+                <p>Créateur d'expériences web innovantes</p>
+            </div>
+            <div class="footer-links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="project.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> obedburindi@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +243 974 937 593 </p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/settings/profile"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/BurindiO"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+    // Navigation active et menu mobile
+    document.addEventListener('DOMContentLoaded', () => {
+        // Navigation active
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Menu mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        
+        if (menuToggle && nav) {
+            menuToggle.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        }
+    });
+
+    </script>
+</body>
+
+</html>
